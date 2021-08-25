@@ -174,3 +174,24 @@ span.empy::after {
 [name="numberPeople"]:focus {
   outline: none;
 }
+
+@media screen and (max-width: 710px) {
+  h1 {
+    margin-top: 50px;
+  }
+  form {
+    display: block;
+    height: 675px;
+  }
+  .father {
+    height: 900px;
+    align-items: flex-start;
+  }
+  .content {
+    height: 220px;
+  }
+  .result {
+    margin: 25px;
+  }
+}
+
