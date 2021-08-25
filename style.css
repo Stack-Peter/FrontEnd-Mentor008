@@ -193,5 +193,22 @@ span.empy::after {
   .result {
     margin: 25px;
   }
+  .tip-calc {
+    padding: 25px 15px 0 0;
+  }
+
+  .tip-result {
+    padding: 15px 15px 0 0;
+  }
+  .num {
+    padding-right: 5px;
+  }
+  .num-two {
+    padding-right: 5px;
+  }
+  button {
+    margin-top: 12px;
+  }
 }
+
 
