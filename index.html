@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- displays site properly based on user's device -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
+      <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+      <title>Frontend Mentor | Tip calculator app</title>
+      <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+      <style>
+         .attribution { font-size: 11px; text-align: center;  display: none;}
+         .attribution a { color: hsl(228, 45%, 44%); }
+      </style>
+   </head>
+   <body>
+      <div class="father">
+        <div class="son">
+          <h1>SPLI<br>TTER</h1>
+         <form action="">
+           <div class="content">
+            <div class="first">
+               <span>Bill</span><br>
+               <input type="text" placeholder="$" name="bill">
+               <label for=""></label>
+            </div>
+            <div class="radio-check">
+               <span class="broke span-tip">Select Tip %</span> 
+               <div class="another-fix">
+               <input type="radio" name="value" id="5"> 
+               <label class="fix-tip" for="5%">05%</label>
+               <input type="radio" name="value" id="10"> 
+               <label class="fix-tip" for="10%">10%</label>
+               <input type="radio" name="value" id="15"> 
+               <label class="fix-tip" for="15%" >15%</label><br>
+              </div>
+               <input type="radio" name="value" id="25">
+               <label class="fix-tip" for="25%">25%</label>
+               <input type="radio" name="value" id="50"> 
+               <label class="fix-tip" for="50%">50%</label>
+               <input type="text" placeholder="Custom" class="custom"> 
+               <label></label>
+            </div>
+            <div>
+               <span class="broke">Number of People</span>
+               <input type="text" placeholder="0" name="numberPeople">
+               <label for=""></label>
+               <div></div>
+            </div>
+          </div>
+            <div class="result">
+            <div class="tip-calc"><span><strong>Tip Amount</strong></span><br>
+               <span>/ person</span> 
+            </div>
+            <div class="num">$0.00</div>
+            <div class="total-calc"><span><strong>Total</strong></span><br>
+               <span>/ person</span> 
+            </div>
+            <div class="num-two">$0.00</div>
+            <button>RESET</button> 
+          </div>
+         </form>
+        </div>
+      </div>
+      <div class="attribution">
+         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+         Coded by <a href="#">Your Name Here</a>.
+      </div>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      <script src="/main.js"></script>
+   </body>
+</html>
