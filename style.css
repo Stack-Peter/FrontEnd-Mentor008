@@ -89,8 +89,9 @@ label:hover {
   cursor: pointer;
 }
 
-input[type="radio"]:checked + label {
+input[type="radio"].selected + label {
   background: hsl(172, 67%, 45%);
+  transition: 0.3s ease-in-out;
 }
 
 .span-tip {
@@ -159,18 +160,81 @@ strong {
   color: hsl(189, 41%, 97%);
 }
 
-[name="numberPeople"].empy {
-  border: 2px solid red;
+[name="numberPeople"].empy,
+[name="numberPeople"].empy:focus {
+  outline: 2px solid red;
 }
 span.empy::after {
   content: "Can't be zero";
   background: none;
   color: red;
-  margin-left: 21px;
+  margin-left: 18px;
   font-size: 12px;
   font-family: "Space Mono", monospace;
 }
 
 [name="numberPeople"]:focus {
   outline: none;
+}
+
+@media screen and (max-width: 710px) {
+  h1 {
+    margin-top: 50px;
+  }
+  form {
+    display: block;
+    height: 675px;
+  }
+  .father {
+    height: 900px;
+    align-items: flex-start;
+  }
+  .content {
+    height: 220px;
+  }
+  .result {
+    margin: 25px;
+  }
+  .tip-calc {
+    padding: 25px 15px 0 0;
+  }
+
+  .tip-result {
+    padding: 15px 15px 0 0;
+  }
+  .num {
+    padding-right: 5px;
+  }
+  .num-two {
+    padding-right: 5px;
+  }
+  button {
+    margin-top: 12px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .father {
+    height: 1000px;
+  }
+  form {
+    width: 300px;
+    height: 677px;
+  }
+  .content {
+    height: 230px;
+  }
+  .fix-tip {
+    margin-right: 0;
+  }
+  input {
+    border: none;
+    background: hsl(189, 41%, 97%);
+    border-radius: 5px;
+    padding: 5px 60px 5px 15px;
+  }
+  .result {
+    margin: 12.5px;
+    width: 275px;
+  }
 }
