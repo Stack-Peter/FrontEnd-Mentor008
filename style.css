@@ -213,6 +213,7 @@ span.empy::after {
   }
 }
 
+
 @media screen and (max-width: 380px) {
   .father {
     height: 1000px;
@@ -238,3 +239,4 @@ span.empy::after {
     width: 275px;
   }
 }
+
