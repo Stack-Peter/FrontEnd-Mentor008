@@ -6,21 +6,15 @@ const htmlTip = document.querySelector('.num');
 const htmlTotal = document.querySelector('.num-two');
 const custom = document.querySelector('.custom');
 const numPeople = document.querySelector('[name="numberPeople"]')
-numPeople.value = +1
+
 function handleChange(e) {
     const value = e.target.value
+
+
     custom.addEventListener('change', (e) => {
-        radio.forEach((i) => {
-            if (i.classList.contains('selected')) {
-                i.classList.remove('selected')
-                i.classList.add('unselected')
-            }
-        })
         const customVal = +e.target.value
         const anotherVal = (+value * (customVal / 100))
         const newValue = anotherVal + +value
-        htmlTip.innerHTML = `$${(customVal).toFixed(2)}`
-        htmlTotal.innerHTML = `$${(newValue).toFixed(2)}`
         const numPeople = document.querySelector('[name="numberPeople"]')
         numPeople.addEventListener('keyup', (event) => {
             const num = +event.target.value
@@ -32,16 +26,9 @@ function handleChange(e) {
 
     radio.forEach((item, index) => {
         item.nextElementSibling.addEventListener('click', () => {
-            radio.forEach((i) => {
-                i.classList.remove('selected')
-            })
-            if (!item.classList.contains('selected')) {
-                item.classList.add('selected')
-            }
             const valueRadio = (+value * (+item.id / 100))
             const newValue = valueRadio + +value
-            htmlTip.innerHTML = `$${(valueRadio / numPeople.value).toFixed(2)}`
-            htmlTotal.innerHTML = `$${(newValue / numPeople.value).toFixed(2)}`
+            console.log(valueRadio)
             numPeople.addEventListener('keyup', (event) => {
                 const num = +event.target.value
                 const tipPerson = valueRadio / num
