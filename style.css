@@ -149,6 +149,7 @@ button {
   color: hsl(183, 100%, 15%);
   font-family: "Space Mono", monospace;
   font-weight: 700;
+  cursor: pointer;
 }
 
 button:hover {
@@ -211,4 +212,28 @@ span.empy::after {
   }
 }
 
-
+@media screen and (max-width: 380px) {
+  .father {
+    height: 1000px;
+  }
+  form {
+    width: 300px;
+    height: 677px;
+  }
+  .content {
+    height: 230px;
+  }
+  .fix-tip {
+    margin-right: 0;
+  }
+  input {
+    border: none;
+    background: hsl(189, 41%, 97%);
+    border-radius: 5px;
+    padding: 5px 60px 5px 15px;
+  }
+  .result {
+    margin: 12.5px;
+    width: 275px;
+  }
+}
