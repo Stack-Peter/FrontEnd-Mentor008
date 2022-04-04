@@ -89,8 +89,9 @@ label:hover {
   cursor: pointer;
 }
 
-input[type="radio"]:checked + label {
+input[type="radio"].selected + label {
   background: hsl(172, 67%, 45%);
+  transition: 0.3s ease-in-out;
 }
 
 .span-tip {
@@ -160,14 +161,15 @@ strong {
   color: hsl(189, 41%, 97%);
 }
 
-[name="numberPeople"].empy {
-  border: 2px solid red;
+[name="numberPeople"].empy,
+[name="numberPeople"].empy:focus {
+  outline: 2px solid red;
 }
 span.empy::after {
   content: "Can't be zero";
   background: none;
   color: red;
-  margin-left: 21px;
+  margin-left: 18px;
   font-size: 12px;
   font-family: "Space Mono", monospace;
 }
