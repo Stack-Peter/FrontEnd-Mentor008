@@ -77,7 +77,6 @@ bill.addEventListener("change", handleChange);
 btn.addEventListener("click", (event) => fun(event))
 function fun(event) {
     event.preventDefault();
-    console.log('ativado')
     document.querySelector("form").reset();
     htmlTip.innerHTML = "$0.00";
     htmlTotal.innerHTML = "$0.00";
