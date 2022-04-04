@@ -150,6 +150,7 @@ button {
   color: hsl(183, 100%, 15%);
   font-family: "Space Mono", monospace;
   font-weight: 700;
+  cursor: pointer;
 }
 
 button:hover {
@@ -213,7 +214,6 @@ span.empy::after {
   }
 }
 
-
 @media screen and (max-width: 380px) {
   .father {
     height: 1000px;
@@ -239,4 +239,3 @@ span.empy::after {
     width: 275px;
   }
 }
-

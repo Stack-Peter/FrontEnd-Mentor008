@@ -38,7 +38,7 @@ function handleChange(e) {
         });
     });
 
-    radio.forEach((item, index) => {
+    radio.forEach((item) => {
         item.nextElementSibling.addEventListener("click", () => {
             radio.forEach((i) => {
                 i.classList.remove("selected");
@@ -74,9 +74,16 @@ function handleChange(e) {
 }
 bill.addEventListener("change", handleChange);
 
-function fun(e) {
-    e.preventDefault();
-    document.getElementById("myForm").reset();
+btn.addEventListener("click", (event) => fun(event))
+function fun(event) {
+    event.preventDefault();
+    document.querySelector("form").reset();
+    htmlTip.innerHTML = "$0.00";
+    htmlTotal.innerHTML = "$0.00";
+    numPeople.value = +1;
     numPeople.classList.remove("empy");
     numPeople.previousElementSibling.classList.remove("empy");
+    radio.forEach((i) => {
+        i.classList.remove("selected");
+    });
 }
