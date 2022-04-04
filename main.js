@@ -83,4 +83,7 @@ function fun(event) {
     numPeople.value = +1;
     numPeople.classList.remove("empy");
     numPeople.previousElementSibling.classList.remove("empy");
+    radio.forEach((i) => {
+        i.classList.remove("selected");
+    });
 }
